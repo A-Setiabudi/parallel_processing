@@ -6,6 +6,7 @@ def func():
     time.sleep(1)
     print('done')
 
-x = threading.Thread(target=func)
-x.start()
+func()
+#x = threading.Thread(target=func)
+#x.start()
 print(threading.activeCount())
